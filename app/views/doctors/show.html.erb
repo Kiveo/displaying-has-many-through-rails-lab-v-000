@@ -6,6 +6,6 @@
 <h2>Department: <%= @doctor.department %></h2>
 
 <h3>Appointments</h3>
-<% @doctor.appointments.each.with_index(1) do |app, i| %>
-  <p>App <%=i%>: <%= app.appointment_datetime.to_s(:long) %></p>
+<% @doctor.appointments.each do |app| %>
+  <p>App: <%= app.appointment_datetime.to_s(:long) %></p>
 <% end %>
