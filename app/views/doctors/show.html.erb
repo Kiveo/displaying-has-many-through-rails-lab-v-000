@@ -7,6 +7,6 @@ require 'pry'
 
 <h3>Appointments</h3>
 <% @doctor.appointments.each.with_index(1) do |app, i| %>
-  binding.pry
+  <% binding.pry %>
   <p>App <%=i%>: <%= app.appointment_datetime.to_s %></p>
 <% end %>
