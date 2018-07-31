@@ -6,7 +6,6 @@ class CreateAppointments < ActiveRecord::Migration
       t.belongs_to :doctor
       t.belongs_to :patient
 
-      t.timestamps null: false
     end
   end
 end
